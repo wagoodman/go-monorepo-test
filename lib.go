@@ -2,10 +2,10 @@ package lib
 
 // version constants that can be tweaked for testing new releases
 const (
-	Version      = "0.4.0"
+	Version      = "0.5.0"
 	BuildDate    = "2024-01-01"
 	CommitHash   = "dev"
-	ReleaseNotes = "4 stuff!!"
+	ReleaseNotes = "5 stuff!!"
 )
 
 // Hello returns a greeting message with version info.
