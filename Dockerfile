@@ -1,7 +1,0 @@
-FROM scratch
-
-ARG TARGETPLATFORM
-
-COPY ${TARGETPLATFORM}/test /test
-
-ENTRYPOINT ["/test"]

@@ -28,27 +28,6 @@ archives:
       - tar.gz
     name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
 
-dockers_v2:
-  - ids:
-      - test
-    images:
-      - "ghcr.io/wagoodman/{{ .ProjectName }}"
-    tags:
-      - "{{ .Version }}"
-      - latest
-    platforms:
-      - linux/amd64
-      - linux/arm64
-    dockerfile: Dockerfile
-    extra_files:
-      - LICENSE
-    labels:
-      org.opencontainers.image.created: "{{ .Date }}"
-      org.opencontainers.image.title: "{{ .ProjectName }}"
-      org.opencontainers.image.revision: "{{ .FullCommit }}"
-      org.opencontainers.image.version: "{{ .Version }}"
-      org.opencontainers.image.source: "https://github.com/wagoodman/go-monorepo-test"
-
 release:
   github:
     owner: wagoodman
