@@ -6,6 +6,7 @@ import (
 
 	"github.com/charmbracelet/lipgloss"
 	lib "github.com/wagoodman/go-monorepo-test"
+	"github.com/wagoodman/go-monorepo-test/cmd/test/importable"
 )
 
 // these can be set via ldflags at build time
@@ -25,4 +26,5 @@ func main() {
 
 	style := lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("212"))
 	fmt.Println(style.Render(lib.Hello()))
+	importable.Thing()
 }
