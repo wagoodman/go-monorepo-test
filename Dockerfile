@@ -1,5 +1,7 @@
 FROM scratch
 
-COPY test /test
+ARG TARGETPLATFORM
+
+COPY ${TARGETPLATFORM}/test /test
 
 ENTRYPOINT ["/test"]
