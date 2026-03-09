@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	github.com/charmbracelet/lipgloss v1.1.0
-	github.com/wagoodman/go-monorepo-test v0.0.0
+	github.com/wagoodman/go-monorepo-test v0.3.0
 )
 
 require (
