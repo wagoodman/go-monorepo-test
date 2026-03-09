@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/charmbracelet/lipgloss"
 	lib "github.com/wagoodman/go-monorepo-test"
 )
 
@@ -22,5 +23,6 @@ func main() {
 		return
 	}
 
-	fmt.Println(lib.Hello())
+	style := lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("212"))
+	fmt.Println(style.Render(lib.Hello()))
 }
