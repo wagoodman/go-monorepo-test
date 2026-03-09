@@ -5,7 +5,7 @@ const (
 	Version      = "0.5.0"
 	BuildDate    = "2024-01-01"
 	CommitHash   = "dev"
-	ReleaseNotes = "8 stuff!!"
+	ReleaseNotes = "9 stuff!!"
 )
 
 // Hello returns a greeting message with version info.
